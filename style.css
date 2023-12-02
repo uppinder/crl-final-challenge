@@ -1,0 +1,327 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --dark: #2e323f;
+  --light-dark: #3b4050;
+  --gray: #f1f1f1;
+  --gold: #a59678;
+  --white: #fff;
+}
+
+body {
+  font-size: 1.125rem;
+  font-family: "Oswald";
+  font-weight: 700;
+}
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.navigation {
+  padding: 0.75em 0;
+  background-color: var(--dark);
+}
+
+.nav__images {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav {
+  display: none;
+}
+
+.nav--visible {
+  display: block;
+}
+
+.nav-row {
+  display: block;
+}
+
+.nav-toggle {
+  cursor: pointer;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.nav__list--primary {
+  margin-bottom: 1em;
+}
+
+.nav__item {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 0.3em;
+}
+
+.nav__item a {
+  color: var(--gray);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.nav__item a:hover,
+.nav__item a:focus {
+  opacity: 0.75;
+}
+
+.nav__btn {
+  background-color: var(--gold);
+  padding: 0.1em 1em;
+  border-radius: 5em;
+}
+
+.hero {
+  padding: 3em 0;
+  background-color: var(--light-dark);
+}
+
+.hero-row {
+  display: block;
+}
+
+.hero__title {
+  color: var(--white);
+  font-size: 5rem;
+  line-height: 1.1;
+  margin-bottom: 0.5em;
+}
+
+.hero__title--highlighted {
+  color: var(--gold);
+}
+
+.hero__text p {
+  color: var(--gray);
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 1.33rem;
+  margin-bottom: 1em;
+}
+
+.btn {
+  color: var(--white);
+  background-color: var(--gold);
+  padding: 0.25em 1em;
+  text-decoration: none;
+  text-transform: uppercase;
+  border-radius: 5em;
+  margin-bottom: 1em;
+}
+
+.btn:hover {
+  opacity: 0.75;
+}
+
+.info {
+  padding: 2em 0;
+  background-color: var(--gray);
+}
+
+.info__text {
+  margin-bottom: 1.5em;
+  text-align: center;
+}
+
+.info__text h2 {
+  color: var(--gold);
+  font-size: 1.67rem;
+  margin-bottom: 0.5em;
+}
+
+.info__text p {
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.description {
+  padding: 3em 0;
+}
+
+img {
+  max-width: 100%;
+}
+
+.description__content h2 {
+  color: var(--gold);
+  font-size: 2rem;
+}
+
+.description__content p {
+  font-size: 1.167rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+  margin: 1.5em 0;
+}
+
+.sidebar__text {
+  margin-bottom: 1em;
+  padding: 2.5em 1.5em;
+  text-align: center;
+  color: var(--gray);
+  background-color: var(--light-dark);
+}
+
+.sidebar__text h2 {
+  font-size: 1.67rem;
+  margin-bottom: 0.5em;
+}
+
+.sidebar__text p {
+  font-family: "Montserrat";
+  font-weight: 400;
+}
+
+.footer {
+  padding: 3em 0;
+  background-color: var(--light-dark);
+}
+
+.footer__heading {
+  color: var(--white);
+  font-size: 3rem;
+  margin-bottom: 0.5em;
+}
+
+.footer__item {
+  margin-bottom: 1em;
+}
+
+.footer__item h2 {
+  color: var(--gold);
+  margin-bottom: 0.5em;
+}
+
+.footer__item p {
+  color: var(--gray);
+  font-family: "Montserrat";
+  font-weight: 400;
+  font-size: 0.88rem;
+}
+
+.footer__item ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.footer__link {
+  margin-bottom: 0.5em;
+}
+
+.footer__link a {
+  color: var(--gray);
+  font-size: 0.88rem;
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-decoration: none;
+}
+
+.footer__link a:hover {
+  opacity: 0.75;
+}
+
+.row {
+  display: block;
+}
+
+@media (min-width: 700px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .nav-row {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav__list {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+  }
+
+  .nav__list--primary {
+    margin: 0 1em 0 0;
+  }
+
+  .nav__item {
+    margin-right: 1em;
+  }
+
+  .nav__images {
+    display: inline;
+  }
+
+  .info {
+    display: flex;
+  }
+
+  .sidebar {
+    display: flex;
+    gap: 1.5em;
+  }
+
+  .footer__links {
+    display: flex;
+    gap: 3em;
+  }
+}
+
+@media (min-width: 1000px) {
+  .row {
+    display: flex;
+    justify-content: space-between;
+    gap: 1.5em;
+  }
+
+  .hero {
+    padding-bottom: 5em;
+  }
+
+  .hero__title {
+    margin-bottom: 0;
+  }
+
+  .hero__text {
+    line-height: 1.5;
+    align-self: flex-end;
+  }
+
+  .description__content {
+    width: 60%;
+  }
+
+  .sidebar {
+    width: 35%;
+    display: block;
+  }
+
+  .footer__item--primary {
+    width: 45%;
+  }
+
+  .footer__links {
+    width: 50%;
+    justify-content: space-between;
+  }
+}
