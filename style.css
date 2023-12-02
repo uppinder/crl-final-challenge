@@ -194,9 +194,11 @@ img {
   color: var(--white);
   font-size: 3rem;
   margin-bottom: 0.5em;
+  text-align: center;
 }
 
 .footer__item {
+  text-align: center;
   margin-bottom: 1em;
 }
 
@@ -279,6 +281,11 @@ img {
   .sidebar {
     display: flex;
     gap: 1.5em;
+  }
+
+  .footer__heading,
+  .footer__item {
+    text-align: initial;
   }
 
   .footer__links {
